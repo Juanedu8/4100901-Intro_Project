@@ -287,28 +287,4 @@ void assert_failed(uint8_t *file, uint32_t line)
 }
 #endif /* USE_FULL_ASSERT */
 
-/*
-   NOTA DE APLICACIÓN DEL PROGRAMA
-
-   Nombre: Sistema de Control con UART y GPIO en STM32
-
-   Descripción:
-   Este programa combina el uso de UART, interrupciones externas, y control de
-   LEDS para mostrar un ejemplo de una interacción entre el hardware y software en un
-   microcontrolador STM32.
-
-   Funcionalidades:
-   - El LED LD2 parpadea cada 250 ms como indicador de "heartbeat".
-   - Al presionar el botón B1:
-      Se enciende un LED externo durante 5 segundos.
-      Se envía un mensaje por UART notificandolo.
-   - Comunicación UART:
-      Cada carácter recibido se transforma en la "siguiente letra" del
-      alfabeto y se devuelve por UART.
-
-   Aplicaciones prácticas:
-   - Base para proyectos IoT con comunicación UART.
-   - Introducción a interrupciones por GPIO y manejo de rebotes.
-   - Punto de partida para menús de control por UART o integración con sensores.
-   -------------------------------------------------------------------------- */
 
